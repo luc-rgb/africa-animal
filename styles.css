@@ -1,0 +1,127 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    padding: 40px;
+    background: linear-gradient(135deg, #4caf50, #81c784);
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* Slider Container */
+#slider-container {
+    position: relative;
+    max-width: 900px;
+    margin: 60px auto;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+#slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Slide Styles */
+.slide {
+    min-width: 100%;
+    transition: opacity 1s ease-in-out;
+    position: relative;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-bottom: 5px solid #4caf50;
+}
+
+.info {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.info h2 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.info p {
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+/* Navigation Buttons */
+#navigation {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#prev,
+#next {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 1rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#prev:hover,
+#next:hover {
+    background-color: #388e3c;
+    transform: scale(1.1);
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin-top: 40px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Active Slide */
+.active {
+    opacity: 1;
+}
+
+/* Transition for Sliding */
+.slide:not(.active) {
+    opacity: 0;
+}
