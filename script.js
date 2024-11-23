@@ -29,7 +29,7 @@ function prevSlide() {
 document.getElementById('next').addEventListener('click', nextSlide);
 document.getElementById('prev').addEventListener('click', prevSlide);
 
-// Auto-slide every 5 seconds
+// Auto-slide every 8 seconds
 setInterval(() => {
     nextSlide();
 }, 8000);
