@@ -32,7 +32,7 @@ document.getElementById('prev').addEventListener('click', prevSlide);
 // Auto-slide every 5 seconds
 setInterval(() => {
     nextSlide();
-}, 5000);
+}, 8000);
 
 // Initialize the first slide
 showSlide(currentIndex);
